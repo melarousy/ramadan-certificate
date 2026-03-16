@@ -244,7 +244,7 @@
         <label>اسم الطفل:</label>
         <input id="childNameInput" placeholder="أدخل اسم الطفل" value="الطفل المميز">
         <label>التوقيع:</label>
-        <input id="signInput" placeholder="أدخل التوقيع" value="ولي الأمر">
+        <input id="signInput" placeholder="أدخل التوقيع" value="عائلتك الفخورة بك">
         <button class="print-btn" onclick="window.print()">طباعة</button>
     </div>
 
@@ -281,7 +281,7 @@
 
         function syncCertificateFields() {
             nameOut.textContent = nameInput.value.trim() || 'الطفل المميز';
-            signOut.textContent = signInput.value.trim() || 'ولي الأمر';
+            signOut.textContent = signInput.value.trim() || 'عائلتك الفخورة بك';
         }
 
         nameInput.addEventListener('input', () => {
