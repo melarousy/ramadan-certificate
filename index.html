@@ -104,6 +104,29 @@
             margin-bottom: 0;
         }
 
+        .seal {
+            position: absolute;
+            bottom: 0.8cm;
+            left: 0.6cm;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+
+        .seal img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
         h1 {
             font-family: 'Amiri', serif;
             font-size: 48px;
@@ -234,6 +257,11 @@
                 border: 10mm double var(--gold) !important;
                 padding: 0.3cm !important;
             }
+
+            .seal {
+                opacity: 1 !important;
+                display: flex !important;
+            }
         }
     </style>
 </head>
@@ -249,6 +277,9 @@
     </div>
 
     <div class="certificate">
+        <div class="seal">
+            <img src="seal.png" alt="Ramadan Seal">
+        </div>
         <div class="lantern left">🏮</div>
         <div class="lantern right">🏮</div>
 
